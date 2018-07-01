@@ -79,6 +79,7 @@
 		3BFB1017205C00E400E10FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB1016205C00E400E10FE3 /* Assets.xcassets */; };
 		3BFB101A205C00E400E10FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB1018205C00E400E10FE3 /* LaunchScreen.storyboard */; };
 		9E33F4D620E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */; };
+		9E33F50020E8B5EF00CED7B7 /* UICollectionView+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33F4FF20E8B5EF00CED7B7 /* UICollectionView+Base.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,7 @@
 		3BFB1019205C00E400E10FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BFB101B205C00E400E10FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHPhotoLibrary+Base.swift"; sourceTree = "<group>"; };
+		9E33F4FF20E8B5EF00CED7B7 /* UICollectionView+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Base.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,8 +176,10 @@
 				3B60583D205E3FAC004A63AD /* Notification+Base.swift */,
 				3B60583C205E3FAC004A63AD /* Notification+UIKeyboard.swift */,
 				3B60585B205E6B68004A63AD /* NSObject+Base.swift */,
+				9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */,
 				3B605846205E5D3A004A63AD /* String+Localized.swift */,
 				3B605847205E5D3A004A63AD /* UIButton+Localized.swift */,
+				9E33F4FF20E8B5EF00CED7B7 /* UICollectionView+Base.swift */,
 				3B777C602062AE1900C6363F /* UIColor+255.swift */,
 				3B777C652062B37900C6363F /* UIColor+Hex.swift */,
 				3B605848205E5D3A004A63AD /* UILabel+Localized.swift */,
@@ -184,7 +188,6 @@
 				3B60585C205E6B68004A63AD /* UIView+Base.swift */,
 				3B60585D205E6B68004A63AD /* UIViewController+Base.swift */,
 				3B777C5620629CFE00C6363F /* URL+Base.swift */,
-				9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				3B605860205E6B68004A63AD /* NSObject+Base.swift in Sources */,
 				3B60583E205E3FAC004A63AD /* Notification+UIKeyboard.swift in Sources */,
 				3B777C3E2062177500C6363F /* TestTableViewCell.swift in Sources */,
+				9E33F50020E8B5EF00CED7B7 /* UICollectionView+Base.swift in Sources */,
 				3B777C43206233A800C6363F /* TestView.swift in Sources */,
 				3B777C662062B37900C6363F /* UIColor+Hex.swift in Sources */,
 				3B6057F4205E1CF4004A63AD /* Int64+String.swift in Sources */,
