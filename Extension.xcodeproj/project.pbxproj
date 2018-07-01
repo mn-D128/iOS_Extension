@@ -78,6 +78,7 @@
 		3BFB1015205C00E400E10FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB1013205C00E400E10FE3 /* Main.storyboard */; };
 		3BFB1017205C00E400E10FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB1016205C00E400E10FE3 /* Assets.xcassets */; };
 		3BFB101A205C00E400E10FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB1018205C00E400E10FE3 /* LaunchScreen.storyboard */; };
+		9E33F4D620E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		3BFB1016205C00E400E10FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BFB1019205C00E400E10FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BFB101B205C00E400E10FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHPhotoLibrary+Base.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				3B60585C205E6B68004A63AD /* UIView+Base.swift */,
 				3B60585D205E6B68004A63AD /* UIViewController+Base.swift */,
 				3B777C5620629CFE00C6363F /* URL+Base.swift */,
+				9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				3B777C662062B37900C6363F /* UIColor+Hex.swift in Sources */,
 				3B6057F4205E1CF4004A63AD /* Int64+String.swift in Sources */,
 				3B777C5720629CFE00C6363F /* URL+Base.swift in Sources */,
+				9E33F4D620E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift in Sources */,
 				3B605864205E6B68004A63AD /* UIViewController+Base.swift in Sources */,
 				3B6057F2205E1CF4004A63AD /* Double+String.swift in Sources */,
 				3B605849205E5D3A004A63AD /* String+Localized.swift in Sources */,
