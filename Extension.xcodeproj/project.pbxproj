@@ -80,6 +80,7 @@
 		3BFB101A205C00E400E10FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB1018205C00E400E10FE3 /* LaunchScreen.storyboard */; };
 		9E33F4D620E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */; };
 		9E33F50020E8B5EF00CED7B7 /* UICollectionView+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E33F4FF20E8B5EF00CED7B7 /* UICollectionView+Base.swift */; };
+		9E9A25C6210391AF008BD056 /* UIPageViewController+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9A25C5210391AF008BD056 /* UIPageViewController+Base.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		3BFB101B205C00E400E10FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E33F4D520E86BFC00CED7B7 /* PHPhotoLibrary+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHPhotoLibrary+Base.swift"; sourceTree = "<group>"; };
 		9E33F4FF20E8B5EF00CED7B7 /* UICollectionView+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Base.swift"; sourceTree = "<group>"; };
+		9E9A25C5210391AF008BD056 /* UIPageViewController+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageViewController+Base.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				3B777C652062B37900C6363F /* UIColor+Hex.swift */,
 				3B605848205E5D3A004A63AD /* UILabel+Localized.swift */,
 				3B777C512062919600C6363F /* UINavigationController+Transition.swift */,
+				9E9A25C5210391AF008BD056 /* UIPageViewController+Base.swift */,
 				3B60585A205E6B68004A63AD /* UITableView+Base.swift */,
 				3B60585C205E6B68004A63AD /* UIView+Base.swift */,
 				3B60585D205E6B68004A63AD /* UIViewController+Base.swift */,
@@ -423,6 +426,7 @@
 				3B60583E205E3FAC004A63AD /* Notification+UIKeyboard.swift in Sources */,
 				3B777C3E2062177500C6363F /* TestTableViewCell.swift in Sources */,
 				9E33F50020E8B5EF00CED7B7 /* UICollectionView+Base.swift in Sources */,
+				9E9A25C6210391AF008BD056 /* UIPageViewController+Base.swift in Sources */,
 				3B777C43206233A800C6363F /* TestView.swift in Sources */,
 				3B777C662062B37900C6363F /* UIColor+Hex.swift in Sources */,
 				3B6057F4205E1CF4004A63AD /* Int64+String.swift in Sources */,
