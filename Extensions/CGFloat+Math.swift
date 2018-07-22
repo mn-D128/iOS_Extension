@@ -12,5 +12,9 @@ extension CGFloat {
     var round: CGFloat {
         return CGFloat(roundf(Float(self)))
     }
+    
+    var abs: CGFloat {
+        return CGFloat(fabsf(Float(self)))
+    }
 
 }
