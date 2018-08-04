@@ -14,6 +14,10 @@ extension UIView {
             return nil
         }
 
+        return instantiate(nibName: nibName) as? T
+    }
+    
+    public class func instantiate<T: UIView>(nibName: String) -> T? {
         let nib: UINib = UINib(nibName: nibName, bundle: nil)
         return nib.instantiate(withOwner: nil, options: nil).first as? T
     }
