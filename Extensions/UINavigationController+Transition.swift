@@ -38,8 +38,8 @@ extension UINavigationController {
     public func dismissViewController(animated: Bool) -> UIViewController? {
         let setupTransition: (CATransition) -> Void = { (transition: CATransition) in
             transition.duration = 0.3
-            transition.type = kCATransitionReveal
-            transition.subtype = kCATransitionFromBottom
+            transition.type = CATransitionType.reveal
+            transition.subtype = CATransitionSubtype.fromBottom
         }
 
         return popViewController(animated: animated,
@@ -50,7 +50,7 @@ extension UINavigationController {
                                      animated: Bool) {
         let setupTransition: (CATransition) -> Void = { (transition: CATransition) in
             transition.duration = 0.3
-            transition.type = kCATransitionFade
+            transition.type = CATransitionType.fade
         }
 
         pushViewController(viewController,
@@ -62,7 +62,7 @@ extension UINavigationController {
     public func fadeOutViewController(animated: Bool) -> UIViewController? {
         let setupTransition: (CATransition) -> Void = { (transition: CATransition) in
             transition.duration = 0.3
-            transition.type = kCATransitionFade
+            transition.type = CATransitionType.fade
         }
 
         return popViewController(animated: animated,

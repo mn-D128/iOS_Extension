@@ -18,7 +18,7 @@ extension UILabel {
             return
         }
 
-        let attributes: [NSAttributedStringKey : Any] = attributedText.attributes(at: 0, effectiveRange: nil)
+        let attributes: [NSAttributedString.Key : Any] = attributedText.attributes(at: 0, effectiveRange: nil)
         self.attributedText = NSAttributedString(string: NSLocalizedString(key, comment: ""), attributes: attributes)
     }
 

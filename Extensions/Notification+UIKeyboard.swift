@@ -11,23 +11,23 @@ import UIKit
 extension Notification {
 
     public var keyboardIsLocal: Bool? {
-        if let value: NSNumber = userInfoValue(UIKeyboardIsLocalUserInfoKey) {
+        if let value: NSNumber = userInfoValue(UIResponder.keyboardIsLocalUserInfoKey) {
             return value.boolValue
         }
 
         return nil
     }
 
-    public var keyboardAnimationCurve: UIViewAnimationOptions? {
-        if let value: NSNumber = userInfoValue(UIKeyboardAnimationCurveUserInfoKey) {
-            return UIViewAnimationOptions(rawValue: value.uintValue)
+    public var keyboardAnimationCurve: UIView.AnimationOptions? {
+        if let value: NSNumber = userInfoValue(UIResponder.keyboardAnimationCurveUserInfoKey) {
+            return UIView.AnimationOptions(rawValue: value.uintValue)
         }
 
         return nil
     }
 
     public var keyboardAnimationDuration: TimeInterval? {
-        if let value: NSNumber = userInfoValue(UIKeyboardAnimationDurationUserInfoKey) {
+        if let value: NSNumber = userInfoValue(UIResponder.keyboardAnimationDurationUserInfoKey) {
             return value.doubleValue as TimeInterval
         }
 
@@ -35,7 +35,7 @@ extension Notification {
     }
 
     public var keyboardFrameBegin: CGRect? {
-        if let value: NSValue = userInfoValue(UIKeyboardFrameBeginUserInfoKey) {
+        if let value: NSValue = userInfoValue(UIResponder.keyboardFrameBeginUserInfoKey) {
             return value.cgRectValue
         }
 
@@ -43,7 +43,7 @@ extension Notification {
     }
 
     public var keyboardFrameEnd: CGRect? {
-        if let value: NSValue = userInfoValue(UIKeyboardFrameEndUserInfoKey) {
+        if let value: NSValue = userInfoValue(UIResponder.keyboardFrameEndUserInfoKey) {
             return value.cgRectValue
         }
 

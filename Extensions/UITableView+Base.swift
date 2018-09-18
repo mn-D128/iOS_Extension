@@ -45,7 +45,7 @@ extension UITableView {
                                                       y: 0.0,
                                                       width: self.frame.width,
                                                       height: 0.0))
-        footerView.autoresizingMask = [UIViewAutoresizing.flexibleWidth]
+        footerView.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth]
         footerView.backgroundColor = UIColor.clear
         
         self.tableFooterView = footerView

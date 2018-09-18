@@ -11,7 +11,7 @@ extension UIButton {
 
     @objc public func setLocalizedTitle(_ key: String) {
         let title: String = NSLocalizedString(key, comment: "")
-        self.setTitle(title, for: UIControlState.normal)
+        self.setTitle(title, for: UIControl.State.normal)
     }
 
 }
