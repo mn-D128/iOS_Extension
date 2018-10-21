@@ -2,7 +2,7 @@
 //  String+Base.swift
 //  Stockey
 //
-//  Created by Masanori Nakano on 2018/10/21.
+//  Created by mn(D128) on 2018/10/21.
 //  Copyright © 2018年 D128. All rights reserved.
 //
 
