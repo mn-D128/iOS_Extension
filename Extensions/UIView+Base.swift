@@ -35,5 +35,11 @@ extension UIView {
             return nil
         }
     }
+    
+    public func removeSubviews() {
+        for subview: UIView in self.subviews.reversed() {
+            subview.removeFromSuperview()
+        }
+    }
 
 }
