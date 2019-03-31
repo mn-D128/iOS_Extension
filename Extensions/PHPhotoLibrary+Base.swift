@@ -35,6 +35,9 @@ extension PHPhotoLibrary {
         // 許可
         case PHAuthorizationStatus.authorized:
             handler(true)
+
+        @unknown default:
+            break
         }
     }
     
