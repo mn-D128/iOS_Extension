@@ -12,7 +12,16 @@ extension UITextField {
 
     // 虫眼鏡
     var lupeImageView: UIImageView? {
-        return leftView as? UIImageView
+        return self.leftView as? UIImageView
+    }
+    
+    // クリアボタン
+    var clearButton: UIButton? {
+        for subview in self.subviews where subview is UIButton {
+            return subview as? UIButton
+        }
+        
+        return nil
     }
     
 }
