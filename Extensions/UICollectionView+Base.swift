@@ -9,6 +9,15 @@
 import UIKit
 
 extension UICollectionView {
+
+    @discardableResult
+    public func register(cellClass: Swift.AnyClass) -> Bool {
+        guard let identifier: String = type(of: self).className(cellClass) else {
+            return false
+        }
+        self.register(cellClass, forCellWithReuseIdentifier: identifier)
+        return true
+    }
     
     @discardableResult
     public func register(nibClass: Swift.AnyClass) -> Bool {

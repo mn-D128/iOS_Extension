@@ -21,6 +21,18 @@ extension UIView {
         }
     }
     
+    var frameWidth: CGFloat {
+        set {
+            var frame: CGRect = self.frame
+            frame.size.width = newValue
+            self.frame = frame
+        }
+        
+        get {
+            return self.frame.size.width
+        }
+    }
+    
     var frameHeight: CGFloat {
         set {
             var frame: CGRect = self.frame
