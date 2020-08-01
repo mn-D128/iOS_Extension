@@ -22,4 +22,26 @@ extension UIScrollView {
         }
     }
     
+    var verticalScrollIndicatorInsetBottom: CGFloat {
+        get {        
+            if #available(iOS 11.1, *) {
+                return self.verticalScrollIndicatorInsets.bottom
+            } else {
+                return self.scrollIndicatorInsets.bottom
+            }
+        }
+        
+        set {
+            if #available(iOS 11.1, *) {
+                var insets: UIEdgeInsets = self.verticalScrollIndicatorInsets
+                insets.bottom = newValue
+                self.verticalScrollIndicatorInsets = insets
+            } else {
+                var insets: UIEdgeInsets = self.scrollIndicatorInsets
+                insets.bottom = newValue
+                self.scrollIndicatorInsets = insets
+            }
+        }
+    }
+    
 }
