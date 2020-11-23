@@ -11,7 +11,12 @@ import Photos
 extension PHPhotoLibrary {
     
     class func requestAuthorizationIfNeeded(_ handler: @escaping (Bool) -> Void) {
-        let status: PHAuthorizationStatus = PHPhotoLibrary.authorizationStatus()
+        let status: PHAuthorizationStatus
+        if #available(iOS 14.0, *) {
+            status = PHPhotoLibrary.authorizationStatus(for: PHAccessLevel.readWrite)
+        } else {
+            status = PHPhotoLibrary.authorizationStatus()
+        }
         switch status {
         // 未実施
         case PHAuthorizationStatus.notDetermined:
@@ -22,7 +27,11 @@ extension PHPhotoLibrary {
                 }
             }
             
-            PHPhotoLibrary.requestAuthorization(requestHandler)
+            if #available(iOS 14.0, *) {
+                PHPhotoLibrary.requestAuthorization(for: PHAccessLevel.readWrite, handler: requestHandler)
+            } else {
+                PHPhotoLibrary.requestAuthorization(requestHandler)
+            }
             
         // 機能制限
         case PHAuthorizationStatus.restricted:
@@ -34,6 +43,10 @@ extension PHPhotoLibrary {
             
         // 許可
         case PHAuthorizationStatus.authorized:
+            handler(true)
+            
+        // 写真選択
+        case PHAuthorizationStatus.limited:
             handler(true)
 
         @unknown default:
