@@ -22,8 +22,14 @@ extension PHPhotoLibrary {
         case PHAuthorizationStatus.notDetermined:
             let requestHandler: (PHAuthorizationStatus) -> Void = { (status: PHAuthorizationStatus) in
                 DispatchQueue.main.async {
-                    let result: Bool = status == PHAuthorizationStatus.authorized
-                    handler(result)
+                    switch status {
+                    case PHAuthorizationStatus.notDetermined, PHAuthorizationStatus.restricted, PHAuthorizationStatus.denied:
+                        handler(false)
+                    case PHAuthorizationStatus.authorized, PHAuthorizationStatus.limited:
+                        handler(true)
+                    @unknown default:
+                        break
+                    }
                 }
             }
             
